@@ -1,3 +1,14 @@
+
+
+:root {
+  --pink1: #e79bc5;
+  --pink2:#df4aa1;
+  --orange1:#e3602a;
+  --red1:#9d0e0e;
+}
+
+/* var(--pink1); */
+
 .App {
   text-align: center;
 }
@@ -14,14 +25,40 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #e79bc5;
+  min-height: 300px;
+max-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.jumbotron-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+button.shop-now{
+  position: absolute;
+    z-index: 10;
+    height: auto;
+    min-width: 110px;
+    max-width: 150px;
+    border-radius: 35px;
+    border: 1px solid #df4aa1;
+    background-color: #e79bc5;
+    color: white;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 6px;
+    margin-top: 11rem;
 }
 
 .App-link {
