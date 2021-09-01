@@ -3,6 +3,7 @@ import './App.css';
 import Video from './components/Video';
 import mp4VideoFile from './videos/jumbotron.mp4';
 import TitleText from './components/TitleText';
+import NavBar from './components/NavBar';
 
 
 
@@ -10,8 +11,9 @@ import TitleText from './components/TitleText';
 function App() {
   return (
     <div className="App">
+       <NavBar />
       <header className="App-header">
-        
+       
         <div className="jumbotron-video">
           
           <Video  mp4Src={mp4VideoFile}/>
