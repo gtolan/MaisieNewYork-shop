@@ -1,0 +1,41 @@
+.side-blocks{
+    min-width: 40px;
+}
+
+
+nav.top-nav, nav.bottom-nav {
+    display: flex;
+    min-height: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding: 6px;
+    z-index: 10;
+    width: calc(100vw - 12px);
+
+    div.left-nav{
+        @extend .side-blocks;
+    }
+    div.mid-nav{
+        width: calc(100vw - 80px);
+        img.center-logo{
+            max-height: 3rem;
+        }
+
+    }   
+    div.right-nav{
+       @extend .side-blocks;
+    }
+}
+
+nav.bottom-nav {
+    top: 3rem;
+    box-shadow: -3px 4px 3px grey;
+
+    .right-nav{
+        margin-right: 20px;
+    }
+}
