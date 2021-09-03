@@ -5,6 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    video {
+        width: 100%;
+    }
+}
+
+
+.video-right-container {
+    width: 100%;
+    height: 100%;
 }
 
 .welcome-information{
