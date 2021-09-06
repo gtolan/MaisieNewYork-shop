@@ -39,9 +39,9 @@ function App() {
             <Video />
             <div className="video-right-jumbotron">
             <ImageList rowHeight={160} className={classes.imageList} cols={3}>
-              {socialMediaApi.data.map((item) => (
-                <ImageListItem key={item.picture} cols={item.cols || 1}>
-                  <img src={item.picture} alt={item.title} />
+              {socialMediaApi.map((item) => (
+                <ImageListItem key={item.thumbnailUrl} cols={item.cols || 1}>
+                  <img src={item.thumbnailUrl} alt={item.title} />
                 </ImageListItem>
               ))}
             </ImageList>

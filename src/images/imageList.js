@@ -1,149 +1,62 @@
-const socialMediaApi = {
-    "data": [
-       {
-          "id": "60d0fe4f5311236168a109ca",
-          "title": "ms",
-          "firstName": "Sara",
-          "lastName": "Andersen",
-          "picture": "https://randomuser.me/api/portraits/women/58.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109cb",
-          "title": "miss",
-          "firstName": "Edita",
-          "lastName": "Vestering",
-          "picture": "https://randomuser.me/api/portraits/med/women/89.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109cc",
-          "title": "ms",
-          "firstName": "Adina",
-          "lastName": "Barbosa",
-          "picture": "https://randomuser.me/api/portraits/med/women/28.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109cd",
-          "title": "mr",
-          "firstName": "Roberto",
-          "lastName": "Vega",
-          "picture": "https://randomuser.me/api/portraits/med/men/25.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109ce",
-          "title": "mr",
-          "firstName": "Rudi",
-          "lastName": "Droste",
-          "picture": "https://randomuser.me/api/portraits/med/men/83.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109cf",
-          "title": "mrs",
-          "firstName": "Carolina",
-          "lastName": "Lima",
-          "picture": "https://randomuser.me/api/portraits/med/women/5.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d0",
-          "title": "mr",
-          "firstName": "Emre",
-          "lastName": "Asikoglu",
-          "picture": "https://randomuser.me/api/portraits/med/men/23.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d1",
-          "title": "mr",
-          "firstName": "Kent",
-          "lastName": "Brewer",
-          "picture": "https://randomuser.me/api/portraits/med/men/52.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d2",
-          "title": "mr",
-          "firstName": "Evan",
-          "lastName": "Carlson",
-          "picture": "https://randomuser.me/api/portraits/med/men/80.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d3",
-          "title": "mr",
-          "firstName": "Friedrich-Karl",
-          "lastName": "Brand",
-          "picture": "https://randomuser.me/api/portraits/med/men/7.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d4",
-          "title": "mr",
-          "firstName": "Valentin",
-          "lastName": "Ortega",
-          "picture": "https://randomuser.me/api/portraits/med/men/3.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d5",
-          "title": "mrs",
-          "firstName": "Sibylle",
-          "lastName": "Leibold",
-          "picture": "https://randomuser.me/api/portraits/med/women/89.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d6",
-          "title": "mrs",
-          "firstName": "Elisa",
-          "lastName": "Lorenzo",
-          "picture": "https://randomuser.me/api/portraits/med/women/89.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d7",
-          "title": "mr",
-          "firstName": "Leevi",
-          "lastName": "Savela",
-          "picture": "https://randomuser.me/api/portraits/med/men/67.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d8",
-          "title": "mrs",
-          "firstName": "Karoline",
-          "lastName": "Sviggum",
-          "picture": "https://randomuser.me/api/portraits/med/women/61.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109d9",
-          "title": "ms",
-          "firstName": "Nuria",
-          "lastName": "Leon",
-          "picture": "https://randomuser.me/api/portraits/med/women/93.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109da",
-          "title": "mr",
-          "firstName": "Lance",
-          "lastName": "Foster",
-          "picture": "https://randomuser.me/api/portraits/med/men/13.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109db",
-          "title": "miss",
-          "firstName": "Naomi",
-          "lastName": "Rodrigues",
-          "picture": "https://randomuser.me/api/portraits/med/women/39.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109dc",
-          "title": "mr",
-          "firstName": "Evan",
-          "lastName": "Roux",
-          "picture": "https://randomuser.me/api/portraits/med/men/59.jpg"
-       },
-       {
-          "id": "60d0fe4f5311236168a109dd",
-          "title": "mr",
-          "firstName": "Miguel",
-          "lastName": "Lima",
-          "picture": "https://randomuser.me/api/portraits/med/men/31.jpg"
-       }
-    ],
-    "total": 99,
-    "page": 0,
-    "limit": 20
- }
+const socialMediaApi = [
+    {
+      "albumId": 1,
+      "id": 1,
+      "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "url": "https://via.placeholder.com/600/92c952",
+      "thumbnailUrl": "https://via.placeholder.com/150/92c952",
+      "cols":2
+    },
+    {
+      "albumId": 1,
+      "id": 2,
+      "title": "reprehenderit est deserunt velit ipsam",
+      "url": "https://via.placeholder.com/600/771796",
+      "thumbnailUrl": "https://via.placeholder.com/150/771796",
+      "cols":3
+    },
+    {
+      "albumId": 1,
+      "id": 3,
+      "title": "officia porro iure quia iusto qui ipsa ut modi",
+      "url": "https://via.placeholder.com/600/24f355",
+      "thumbnailUrl": "https://via.placeholder.com/150/24f355",
+      "cols":1
+    },
+    {
+      "albumId": 1,
+      "id": 4,
+      "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+      "url": "https://via.placeholder.com/600/d32776",
+      "thumbnailUrl": "https://via.placeholder.com/150/d32776"
+    },
+    {
+      "albumId": 1,
+      "id": 5,
+      "title": "natus nisi omnis corporis facere molestiae rerum in",
+      "url": "https://via.placeholder.com/600/f66b97",
+      "thumbnailUrl": "https://via.placeholder.com/150/f66b97"
+    },
+    {
+      "albumId": 1,
+      "id": 6,
+      "title": "accusamus ea aliquid et amet sequi nemo",
+      "url": "https://via.placeholder.com/600/56a8c2",
+      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2"
+    },
+    {
+      "albumId": 1,
+      "id": 7,
+      "title": "officia delectus consequatur vero aut veniam explicabo molestias",
+      "url": "https://via.placeholder.com/600/b0f7cc",
+      "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc"
+    },
+    {
+      "albumId": 1,
+      "id": 8,
+      "title": "aut porro officiis laborum odit ea laudantium corporis",
+      "url": "https://via.placeholder.com/600/54176f",
+      "thumbnailUrl": "https://via.placeholder.com/150/54176f"
+    }]
 
  export default socialMediaApi;
