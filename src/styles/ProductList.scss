@@ -1,0 +1,20 @@
+.product-categories.container {
+  img,
+  video {
+    width: calc(100% - 4px);
+    height: 300px;
+    margin: 2px 2px 0px;
+  }
+  video {
+    object-fit: fill;
+  }
+}
+
+@media only screen and (min-width: 335px) {
+  .product-categories.container {
+    img,
+    video {
+      width: calc(50% - 4px);
+    }
+  }
+}

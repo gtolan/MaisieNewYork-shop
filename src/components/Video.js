@@ -1,15 +1,3 @@
-
-
-// const areEqual = (prevProps, nextProps) => {
-//     /*
-//     return true if passing nextProps to render would return
-//     the same result as passing prevProps to render,
-//     otherwise return false
-//     */
-//    return prevProps === nextProps ? true : false;
-//   }
-
-//add poster image
 import mp4VideoFile from '../videos/jumbotron.mp4';
 
 const Video = ({mp4Src, oggSrc}) => {
@@ -20,6 +8,10 @@ const Video = ({mp4Src, oggSrc}) => {
                 {/* <source src={oggSrc} type="video/ogg"/> */}
                 Your browser does not support the video tag.
             </video>
+            <div className="buy-now-card">
+
+                <button>Buy Now</button>
+            </div>
         </div>
     )
 }

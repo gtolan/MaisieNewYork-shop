@@ -7,11 +7,9 @@ const NavBar = () => {
 
     return (
       <nav className="top-nav">
-        <div className="left-nav">
-  
-        </div>
         <div className="mid-nav">
-            <img className="center-logo" alt="navbar logo" src={logoHandwriting}/>
+          Maisie
+            {/* <img className="center-logo" alt="navbar logo" src={logoHandwriting}/> */}
         </div>
         <div className="right-nav">
 
