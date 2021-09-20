@@ -1,13 +1,18 @@
 import ImageOne from '../images/IMG_5948.jpg';
 import ImageTwo from '../images/IMG_5951.jpg';
-import ImageThree from '../images/IMG_5962.jpg';
+// import ImageThree from '../images/IMG_5962.jpg';
 import ImageFour from '../images/IMG_5975.jpg';
 import ImageFive from '../images/IMG_5955.jpg';
 import ImageSix from '../images/IMG_5947.jpg';
 import mp4VideoFile from '../videos/jumbotron.mp4';
 import '../styles/ProductList.scss';
 
-const productCategoryImages = [ImageOne,ImageTwo,mp4VideoFile,ImageFour,ImageFive,ImageSix];
+const productCategoryImages = [{src:ImageOne, text:'Dream Catcher'},
+                                {src:ImageTwo, text:'Masks'},
+                                {src:mp4VideoFile, text:'Videos'},
+                                {src:ImageFour,text:'Knitwear'},
+                                {src:ImageFive,text:'Accesories'},
+                                {src:ImageSix,text:'Pets'}];
 
 
 
@@ -21,10 +26,10 @@ const ProductList = () => {
                 </video>)
     }
 
-    const CategoryText = ({children}) => {
+    const CategoryText = ({children, text}) => {
         return ( <>
              <div className="category-text">
-                 <h1>Yo</h1>
+                    <div className="category-name"><button>{text}</button></div>
                     {children}
                     </div>
                 </>)
@@ -32,13 +37,12 @@ const ProductList = () => {
 
     const CategoryListImages = ({images}) => {
         console.log(images, 'no map')
-        return (
-            <CategoryText>{images.map((item,id) => {
-                        return item.endsWith('jpg') ?
-                                (<img key={id} src={item} alt='cat list'/>) :
-                                (<VideoCategory src={item}/>)
-                        })}
-            </CategoryText>
+        return (images.map(({src,text},id) => {
+                        return src.endsWith('jpg') ?
+                                (<CategoryText key={id} text={text}><img  src={src} alt='cat list'/></CategoryText>) :
+                                (<CategoryText key={id} text={text}><VideoCategory src={src}/></CategoryText>)
+                        })
+            
             )
     }
     

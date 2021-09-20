@@ -148,3 +148,31 @@ nav.bottom-nav {
     font-size: 2rem;
   }
 }
+
+@media only screen and (max-width: 335px) {
+  .top-nav .mid-nav {
+    margin-left: -1.17rem;
+  }
+  nav.bottom-nav {
+    padding: 0;
+    width: 100%;
+  }
+  nav.bottom-nav .right-nav {
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  nav.top-nav {
+    width: 100vw;
+    div.mid-nav {
+      margin-left: 5px;
+      width: 100vw;
+    }
+  }
+  nav.bottom-nav {
+    top: 3rem;
+    padding: 0 0px 0;
+    width: 100%;
+  }
+}

@@ -42,6 +42,7 @@ h6.MuiTypography-root.makeStyles-title-12.MuiTypography-h6 {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow-y: hidden;
 }
 
 .jumbotron-video {
@@ -51,8 +52,9 @@ h6.MuiTypography-root.makeStyles-title-12.MuiTypography-h6 {
   flex-direction: row;
   max-height: 500px;
   overflow: hidden;
-  width: 100%;
-  padding-left: 307px;
+  width: 100vw;
+  z-index: 5;
+  padding-left: 0px;
   background-color: #a21a1c;
   background-image: -webkit-linear-gradient(rgba(255, 74, 158, 0.2) 0%, rgba(255, 74, 158, 0) 50%),
     -webkit-linear-gradient(30deg, #e79bc5 16%, #df4aa1 85%);
@@ -76,7 +78,7 @@ h6.MuiTypography-root.makeStyles-title-12.MuiTypography-h6 {
 
 .video-container {
   height: 500px;
-  transform: rotate3d(1, 1, 1, 305deg);
+  transform: rotate3d(1, 1, 1, 305deg) translateX(-80px) translateY(-44px);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: -5px 4px 20px grey;
@@ -133,5 +135,44 @@ button.shop-now {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .video-container {
+    transform: rotate3d(1, 1, 1, 313deg) translateX(-2px) translateY(-19px);
+  }
+  .jumbotron-video {
+    padding-left: 100px;
+
+    h1 {
+      text-align: left;
+      margin-left: 0rem;
+      top: 8rem;
+      font-size: 3.3rem;
+      position: absolute;
+      width: 279px;
+      left: 1rem;
+      z-index: 10;
+      line-height: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .jumbotron-video {
+    h1 {
+      margin-left: -3px;
+      top: 10rem;
+      font-size: 3.5rem;
+    }
+  }
+  button.shop-now {
+    margin-top: 15rem;
+  }
+
+  .video-container {
+    transform: rotate3d(1, 1, 1, 305deg) translateX(102px) translateY(49px);
+    border-radius: 10px;
   }
 }

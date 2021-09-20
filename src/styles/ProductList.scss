@@ -1,20 +1,104 @@
 .product-categories.container {
-  img,
-  video {
-    width: calc(100% - 4px);
+  .category-text {
+    display: flex;
+    align-items: baseline;
     height: 300px;
     margin: 2px 2px 0px;
-  }
-  video {
-    object-fit: fill;
+    overflow: hidden;
+    .category-name {
+      position: absolute;
+      margin: 0;
+      margin-top: 212px;
+      padding: 10px;
+      color: white;
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      display: flex;
+      button {
+        cursor: pointer;
+        height: 42px;
+        position: relative;
+        min-width: 150px;
+        max-width: 150px;
+        border-radius: 25px;
+        border: 2px solid white;
+        background-color: #7c8181db;
+        color: white;
+        font-weight: 800;
+        font-size: 1rem;
+        padding: 12px;
+        font-family: Arial;
+        //   background: linear-gradient(62deg, #828282, transparent);
+      }
+    }
+    img,
+    video {
+      width: calc(100% - 4px);
+
+      height: auto;
+      margin: 2px 2px 0px;
+    }
+    video {
+      object-fit: fill;
+    }
   }
 }
 
 @media only screen and (min-width: 335px) {
   .product-categories.container {
-    img,
-    video {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .category-text {
+      display: flex;
+      align-items: baseline;
+      height: 300px;
+      margin: 2px 2px 0px;
+      overflow: hidden;
       width: calc(50% - 4px);
+      .category-name {
+        position: absolute;
+        margin: 0;
+        padding: 10px;
+        color: white;
+        margin-top: 212px;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+        display: flex;
+        button {
+          cursor: pointer;
+          position: relative;
+          padding: 6px 14px;
+          color: white;
+          margin: 0;
+          height: 42px;
+          font-size: 15px;
+          letter-spacing: 1px;
+          border-radius: 30px;
+          border: 2px solid white;
+          min-width: 158px;
+        }
+      }
+      img,
+      video {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .product-categories.container {
+    .category-text {
+      margin: 2px 2px 0px;
+      overflow: hidden;
+      width: calc(33% - 2px);
+      .category-name {
+        width: 33%;
+      }
     }
   }
 }
