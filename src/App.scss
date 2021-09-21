@@ -112,11 +112,13 @@ h6.MuiTypography-root.makeStyles-title-12.MuiTypography-h6 {
       background-color: white;
       height: 4rem;
       button {
-        background-color: purple;
+        // background-color: purple;
         color: white;
+        background-color: #737878;
+        // color: WHITE
         font-weight: 600;
         height: 2rem;
-        border-radius: 30px;
+        border-radius: 0px;
         border: none;
         width: 199px;
         margin-top: 10px;
@@ -131,7 +133,7 @@ button.shop-now {
   height: 42px;
   min-width: 150px;
   max-width: 150px;
-  border-radius: 20px;
+  border-radius: 0px;
   border: 2px solid white;
   background-color: #ffffff14;
   color: white;
