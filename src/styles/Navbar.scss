@@ -48,6 +48,7 @@ nav.bottom-nav {
  */
 .hamburger {
   padding: 12px 12px;
+  padding-left: 19px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -91,7 +92,7 @@ nav.bottom-nav {
 .hamburger-inner::after {
   width: 33px;
   height: 4px;
-  background-color: #e696c2;
+  background-color: black;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -144,29 +145,31 @@ nav.bottom-nav {
     margin-left: 0.4rem;
     font-family: "Roboto", sans-serif;
     margin-left: 2.83rem;
-    color: #e484ba;
+    color: black;
     font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: 335px) {
-  .top-nav .mid-nav {
-    margin-left: -1.17rem;
-  }
-  nav.bottom-nav {
-    padding: 0;
-    width: 100%;
-  }
-  nav.bottom-nav .right-nav {
-    margin-right: 8px;
-  }
+// @media only screen and (min-width: 335px) {
+.top-nav .mid-nav {
+  margin-left: -1.17rem;
+  margin-left: -4px;
 }
+nav.bottom-nav {
+  padding: 0;
+  width: 100%;
+  box-shadow: 0px 4px 4px #80808073;
+}
+nav.bottom-nav .right-nav {
+  margin-right: 8px;
+}
+// }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 850px) {
   nav.top-nav {
     width: 100vw;
     div.mid-nav {
-      margin-left: 5px;
+      margin-left: 42px;
       width: 100vw;
     }
   }

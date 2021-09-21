@@ -20,6 +20,7 @@ function App() {
       <header className="App-header">
           <div className="jumbotron-video">
             <h1>Welcome to MaisieNYC</h1>
+            <h5>Handcrafted designs</h5>
             <Video />
           </div>
         <button className='shop-now'>Shop</button>
